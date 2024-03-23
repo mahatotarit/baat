@@ -1,0 +1,152 @@
+ * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .d-none{
+            display: none !important;
+        }
+        .root {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Added position relative */
+            overflow: hidden; /* Added overflow hidden to hide overflow of video */
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure video covers the entire area */
+            filter: blur(30px); /* Apply blur effect */
+            z-index: -1;
+        }
+        .connect_button {
+            padding: 10px 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 10px;
+            background-color: #0CFFB3;
+            font-weight: bold;
+            border-color: #0a9468;
+            font-size: 20px;
+            z-index: 1; /* Ensure button appears on top of the video */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sell_box b,input{
+          color: white;
+          display: inline-block;
+        }
+
+        .sell_box div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .sell_box div p{
+          color: white;
+          font-size: 14px;
+        }
+        .parent_all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .sell_box_1 *{
+          color: white;
+        }
+        .sell_box_1{
+            border-radius: 10px;
+            border: 1px solid #0CFFB3;
+            background-color: transparent;
+            margin-bottom: 15px;
+
+            height: 100px;
+            width: 50%;
+            background-color: #00000000;
+            padding: 10px;
+
+            display: flex;
+            max-height: 200px;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .sell_box_1 > div{
+            display:flex;
+        }
+        .sell_box{
+            border-radius: 10px;
+            border: 1px solid #0CFFB3;
+            background-color: transparent;
+
+            height: 200px;
+            width: 50%;
+            background-color: #00000079;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .approve_token_input{
+            outline: none;
+            padding: 5px;
+            font-weight: bold;
+            background-color: transparent;
+            outline: none;
+            border: none;
+        }
+        .submit_sell{
+            width: 70%;
+            margin-top: 15px;
+            border-radius: 10px;
+            background-color: #0CFFB3;
+            font-weight: bold;
+            padding: 5px;
+            font-size: 18px;
+            border-color: #0CFFB3;
+        }
+        .input_div{
+            border: 1px solid #0CFFB3;
+            border-radius: 10px;
+            width: 70%;
+            padding: 5px;
+            background-color: transparent;
+
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 70% !important;
+        }
+        .input_div button{
+            padding: 2px 4px;
+            border-radius: 5px;
+            border-color:#0a9468;
+        }
+
+        @media (max-width:768px) {
+              .sell_box_1 ,  .sell_box{
+                width: 90% !important;
+              }
+              .sell_box_1 > div *{
+                font-size:14px;         
+              }
+        }
+
+         @media (max-width:500px) {
+              .submit_sell , .input_div{
+                   width: 100%;
+              }
+        }

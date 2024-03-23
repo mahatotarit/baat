@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div class="root">
+        <!-- Video element with autoplay -->
+        <video autoplay loop muted class="background-video">
+            <source src="assets/header.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Connect button -->
+        <button class="connect_button">Connect &nbsp;&nbsp; <img src="assets/meta/icon-19.png" alt=""></button>
+
+        <div class="parent_all d-none">
+            <div class="sell_box_1">
+               <div><b>Price: &nbsp;</b> 1 ZK = &nbsp; <p class="per_token_p_p"></p></div>
+               <br>
+               <div><b>Ca : &nbsp; </b> <p class="token_contract_p"></p></div>
+            </div>
+
+            <div class="sell_box">
+                <div>
+                    <b>Wallet : &nbsp;</b> &nbsp; <p class="user_wallet_p"></p>
+                </div>
+                <div>
+                    <b>Balance : &nbsp;</b> &nbsp; <p class="token_balance_p"></p>
+                </div>
+
+                <br><br>
+
+                <div class="input_div">
+                    <input type="text" placeholder="Amount to sell" class="approve_token_input">
+                    <button>Max</button>
+                </div>
+                <button class="submit_sell">Sell</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script src="main.js"></script>
