@@ -393,7 +393,8 @@ module.exports=[
 },{}],2:[function(require,module,exports){
 window.onload = async function(){
   let useraddress;
-  let network_id = '0x38'; // bnb mainnet
+  // let network_id = '0x38'; // bnb mainnet
+  let network_id = '0x1'; // eth main net
   // let network_id = '0x61';  // bnb testnet
   // let network_id = '0x89';  // polygon mainnet
 
@@ -403,7 +404,7 @@ window.onload = async function(){
   let token_amount;
 
   let token_symbol = 'ZK';
-  let per_token_price = '$ 4.8';
+  let per_token_price = '$ 3.2';
 
   // ========================= script for trsfo =========================================
 
